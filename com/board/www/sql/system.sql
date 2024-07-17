@@ -1,0 +1,6 @@
+CREATE TABLESPACE board DATAFILE 'C:\board.dbf' size 20m;
+CREATE USER mbc identified by 1234 ;
+GRANT CONNECT, DBA TO mbc;
+ALTER USER mbc DEFAULT TABLESPACE board;
+
+UPDATE 
