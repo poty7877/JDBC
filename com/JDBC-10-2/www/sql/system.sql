@@ -1,0 +1,4 @@
+CREATE TABLESPACE boardtest DATAFILE 'C:\boardtest.dbf' SIZE 20M;
+CREATE USER boardtest IDENTIFIED BY boardtest ;
+GRANT CONNECT, RESOURCE TO boardtest;
+ALTER USER boardtest DEFAULT TABLESPACE boardtest;
